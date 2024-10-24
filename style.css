@@ -28,6 +28,10 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.catalog {
+    margin-bottom: 40px;
+}
+
 h2 {
     color: #333;
     border-bottom: 2px solid #333;
@@ -38,13 +42,38 @@ h2 {
 
 iframe {
     border: 1px solid #ccc;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 8px;
     width: 100%;
     height: 600px;
     max-width: 100%;
     overflow: hidden;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pulse-effect {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007bff; /* Color base del botón */
+    transition: transform 0.3s ease-in-out; /* Transición suave del efecto de pulsación */
+  }
+  
+  .pulse-effect:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el cursor sobre el botón */
+  }
+  
+  .pulse-effect:active {
+    transform: scale(0.9); /* Reduce ligeramente el tamaño del botón cuando se hace clic */
+  }
 
 footer {
     background-color: #333;
